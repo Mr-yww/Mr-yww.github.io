@@ -1,0 +1,221 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family:"Microsoft YaHei",arial,微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	overflow-x: hidden;
+}
+/*隐藏safiri浏览器input框右侧自带的小人icon*/
+input:read-only{ 
+	color: #888888!important;
+}
+textarea:read-only{ 
+	color: #888888!important;
+}
+input{
+	-webkit-appearance:input;
+} 
+input::-webkit-search-cancel-button {
+	display: none;
+}
+input::-webkit-contacts-auto-fill-button {
+	visibility: hidden;
+	display: none !important;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+}
+/*flex排列布局*/
+.spaceBetween {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.spaceAround {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.spaceLeft {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.spaceRight {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.spaceCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/*容器间距，及常用input、按钮样式集*/
+.pad_box{
+	padding: 15px;
+	/*padding-bottom: 0;*/
+}
+.mar_box{
+	margin-bottom: 10px;
+}
+.conditionInput{
+	position: relative;
+	margin-top:15px;
+	margin-right: 15px;
+}
+.conditionInput span{
+	position: absolute;
+	top: 0px;
+	left:4px;
+	height: 30px;
+	line-height: 30px;
+	color: #666666;
+	z-index: 2;
+}
+.conditionInput input{
+	width: 200px;
+	padding-left: 60px;
+	border-radius: 6px;
+}
+.itemContainer{
+	margin-right: 15px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	width: 280px;
+	min-height: 30px;
+}
+.itemContainer label{
+	min-width: 66px;
+	position: relative;
+}
+.itemContainer label span{
+	/*color:red;*/
+	position: absolute;
+	left: -7px;
+}
+.itemContainer input{
+	width: 180px;
+	padding-left: 5px;
+  border: 1px solid #ccc;
+	outline: none;
+	border-radius: 6px;
+}
+.itemContainer textarea{
+	border: 1px solid #5196f3;
+	color: #5196f3;
+	outline: none;
+}
+.itemContainer .layui-form-select{
+	width: 180px;	
+}
+.itemContainer input:focus,.itemContainer input:hover,.itemContainer textarea:focus,.itemContainer textarea:hover{
+	border: 1px solid #ccc !important;
+}
+
+.itemContainer .layui-form-select .layui-select-title input{
+	width: 100%;
+	max-width: 310px;
+}
+.layui-form-select dl {
+	top: 34px;
+	z-index: 999;
+}
+.layui-form-select dl dd.layui-this {
+	background-color: #5dacf8;
+}
+.layui-form-select .layui-input {
+	border-radius: 6px;
+}
+.layui-form-selectup dl {
+	top: auto;
+	bottom: auto;
+}
+
+.layui-form-danger+.layui-form-select .layui-input,
+.layui-form-danger:focus {
+	border-color: #ccc !important;
+}
+
+
+.flexStart{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+/*超出长度显示省略号样式*/
+.ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.cursorcheck{
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+.input_disabled{
+	background:#f3f2f2;
+}
+::-webkit-scrollbar {
+	width: 10px;
+	height: 5px;
+	background-color: #F5F5F5;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #cccccc;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cccccc !important;
+  border-radius: 4px;
+}
+
+::-moz-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+::-moz-scrollbar-thumb {
+  background-color: #8899a7;
+  border-radius: 4px;
+}
+
+.btn_none {
+	background: none;
+	color: #FFF;
+	border:none;
+	outline: none;
+}
